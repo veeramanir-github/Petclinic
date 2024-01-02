@@ -82,7 +82,7 @@
         
          <!-- mychanges Nexus server -->
              <distributionManagement>
-           <repository>
+           <repository>        
              <id>maven-releases</id>
              <!-- CHANGE HERE by your team Nexus server -->
              <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl> 
