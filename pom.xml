@@ -80,20 +80,22 @@
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
         
-         <!-- Nexus server -->
+         <!-- mychanges Nexus server -->
          <distributionManagement>
            <repository>
              <id>maven-releases</id>
              <!-- CHANGE HERE by your team Nexus server -->
-             <url>http://localhost:8081/repository/maven-releases/</url>
+             <url> http://localhost:8081/#admin/repository/repositories:maven-releases </url> 
+             <!-- <url>http://localhost:8081/repository/maven-releases/</url> --> 
            </repository>
            <snapshotRepository>
              <id>maven-snapshots</id>
              <!-- CHANGE HERE by your team Nexus server -->
-             <url>http://localhost:8081/repository/maven-releases/</url>
+              <url> http://localhost:8081/#admin/repository/repositories:maven-releases </url>    
+             <!-- <url>http://localhost:8081/repository/maven-releases/</url> -->
            </snapshotRepository>
          </distributionManagement>
-             
+         <!-- mychanges Nexus server -->   
     </properties>
 
     <dependencyManagement>
@@ -570,8 +572,10 @@
          <repository>
            <id>maven-releases</id>
            <name>maven-releases</name>
-           <url>http://localhost:8081/repository/maven-releases/</url>
+         <url> http://localhost:8081/#admin/repository/repositories:maven-releases </url> 
+          <!-- <url>http://localhost:8081/repository/maven-releases/</url> --> 
          </repository>  
+        <!-- myadded here -->    
     </repositories>
 
 </project>
