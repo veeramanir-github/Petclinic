@@ -82,17 +82,18 @@
         
          <!-- mychanges Nexus server -->
              <distributionManagement>
-           <repository>        
+                      
+            <repository>     
              <id>maven-releases</id>
              <!-- CHANGE HERE by your team Nexus server -->
-             <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl> 
-             <!-- <url>http://localhost:8081/repository/maven-releases/</url> --> 
+             <!--  <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl> -->
+             <url>http://localhost:8081/repository/maven-releases/</url>  
            </repository>
            <snapshotRepository>
              <id>maven-snapshots</id>
              <!-- CHANGE HERE by your team Nexus server -->
-              <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl>    
-             <!-- <url>http://localhost:8081/repository/maven-releases/</url> -->
+              <!--  <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl>  -->  
+             <url>http://localhost:8081/repository/maven-releases/</url> 
            </snapshotRepository>
          </distributionManagement>
          <!-- mychanges Nexus server -->   
@@ -573,8 +574,8 @@
            <id>maven-releases</id>
            <name>maven-releases</name>
          <!-- <url> http://localhost:8081/#browse/browse:maven-releases </url> -->
-         <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl> 
-          <!-- <url>http://localhost:8081/repository/maven-releases/</url> --> 
+        <!--  <localurl> http://localhost:8081/#admin/repository/repositories:maven-releases </localurl> -->
+          <url>http://localhost:8081/repository/maven-releases/</url>  
          </repository>  
         <!-- myadded here -->    
     </repositories>
