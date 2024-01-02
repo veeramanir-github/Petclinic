@@ -7,8 +7,8 @@
 FROM tomcat:9.0.65-jdk11-openjdk
 
 # Copy the WAR file into the Tomcat webapps directory
-# COPY target/petclinic.war /usr/local/tomcat/webapps/petclinic.war
-COPY target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/petclinic.war
+COPY target/petclinic.war /usr/local/tomcat/webapps/petclinic.war
+# COPY target/petclinic.war /opt/apache-tomcat-9.0.65/webapps/petclinic.war
 
 # Expose the port that Tomcat will use (8080 by default)
 EXPOSE 8080
