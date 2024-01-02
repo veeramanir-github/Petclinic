@@ -81,6 +81,19 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
         <!-- mychanges Nexus server -->
         <distributionManagement>
+             <repository>
+                 <!-- Repository details go here -->
+                      <id>maven-releases</id>
+                      <url>http://localhost:8081/repository/maven-releases/</url>
+             </repository>
+             <snapshotRepository>
+                 <!-- Snapshot repository details go here -->
+                      <id>maven-snapshots</id>
+                      <url>http://localhost:8081/repository/maven-releases/</url>
+             </snapshotRepository>
+       </distributionManagement>
+<!--
+        <distributionManagement>
             <repository> 
              <id>maven-releases</id>
              <!-- CHANGE HERE by your team Nexus server -->
@@ -94,7 +107,8 @@
              <url>http://localhost:8081/repository/maven-releases/</url> 
            </snapshotRepository>
        </distributionManagement>
-         <!-- mychanges Nexus server -->   
+         <!-- mychanges Nexus server --> 
+-->
     </properties>
 
     <dependencyManagement>
