@@ -79,6 +79,8 @@
         <!-- Docker image -->
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
+        
+         <!-- Nexus server -->
          <distributionManagement>
            <repository>
              <id>maven-releases</id>
@@ -563,6 +565,8 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+        
+         <!-- myadded here -->     
          <repository>
            <id>maven-releases</id>
            <name>maven-releases</name>
