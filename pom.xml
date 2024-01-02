@@ -572,6 +572,7 @@
          <repository>
            <id>maven-releases</id>
            <name>maven-releases</name>
+         <!-- <url> http://localhost:8081/#browse/browse:maven-releases </url> -->
          <url> http://localhost:8081/#admin/repository/repositories:maven-releases </url> 
           <!-- <url>http://localhost:8081/repository/maven-releases/</url> --> 
          </repository>  
