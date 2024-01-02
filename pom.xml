@@ -79,6 +79,7 @@
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
         <!-- mychanges Nexus server -->
+<!--
         <distributionManagement>
              <repository>
                  <!-- Repository details go here -->
@@ -91,7 +92,7 @@
                       <url>http://localhost:8081/repository/maven-releases/</url>
              </snapshotRepository>
        </distributionManagement>
-<!--
+
         <distributionManagement>
             <repository> 
              <id>maven-releases</id>
